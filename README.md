@@ -31,5 +31,24 @@ export VAULT_ADDR="https://aws-hcp-vault-cluster-public-vault-2049bf62.1ed84a25.
 export VAULT_TOKEN=hvs.CAESIIyVZxwo9FGONs1nPA3-YombEVOxK-Cg16rejix7D0UcGicKImh2cy4yOEpjenJEVDlUczk0T1h3NVhQMUNWSUIuV3BVSEYQlAE
 
 tfc-aws-iam-admin
-Access key - AKIA4MTWLHEMOTXR574Q
-Secret access key - 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
+Access key - AKIA4MTWLHEMACGDZQWJ
+Secret access key - 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
+
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+
+no-op
+vault_admin_accesskey :
+"AKIA4MTWLHEMAEE2MBX7"
+no-op
+vault_admin_arn :
+"arn:aws:iam::851725465880:user/vault-admin"
+no-op
+vault_admin_id :
+"vault-admin"
+no-op
+vault_admin_name :
+"vault-admin"
+no-op
+vault_admin_secret_accesskey :
+Sensitive value
