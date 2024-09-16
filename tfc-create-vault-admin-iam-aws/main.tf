@@ -1,3 +1,7 @@
+provider "aws" {
+  # Configuration options
+  region = var.aws_region
+}
 resource "aws_iam_user" "vault_admin" {
   name = var.user_name
   path = "/"
@@ -37,7 +41,7 @@ data "aws_iam_policy_document" "inline_po_vault" {
         "iam:RemoveUserFromGroup"
         ]
     resources = [
-		"arn:aws:iam::339713018668:user/vault-*"
+		"arn:aws:iam::851725465880:user/tfc-admin-iam-admin"
         ]
   }
 }
