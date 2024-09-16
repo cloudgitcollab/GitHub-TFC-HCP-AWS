@@ -41,7 +41,7 @@ data "aws_iam_policy_document" "inline_po_vault" {
         "iam:RemoveUserFromGroup"
         ]
     resources = [
-		"arn:aws:iam::851725465880:user/tfc-admin-iam-admin"
+		"arn:aws:iam::851725465880:user/vault-*"
         ]
   }
 }
