@@ -36,8 +36,8 @@ data "vault_aws_access_credentials" "master_iamadmin_creds" {
   role    = var.backend_role
 }
 
-data "vault_aws_static_access_credentials" "creds" {
-  count = length(var.user_list)
-  backend = var.backend_path
-  name    = vault_aws_secret_backend_static_role.static_role[count.index].name
-}
+# data "vault_aws_static_access_credentials" "creds" {
+#   count = length(var.user_list)
+#   backend = var.backend_path
+#   name    = vault_aws_secret_backend_static_role.static_role[count.index].name
+# }
