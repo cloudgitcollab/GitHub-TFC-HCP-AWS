@@ -40,10 +40,10 @@ path "example/*" {
 EOT
 }
 
-resource "vault_jwt_auth_backend_role" "tfc_aws_secret_role" {
+resource "vault_jwt_auth_backend_role" "tfc_role" {
   backend = vault_jwt_auth_backend.tfc_jwt.path
   role_name = var.tfc_role_name
-  token_policies = [vault_policy.tfc_dpc_aws_secret_policy.name]
+  token_policies = [vault_policy.tfc_policy.name]
 
   bound_audiences = [var.tfc_vault_audience]
 
