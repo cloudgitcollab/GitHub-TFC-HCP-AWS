@@ -13,7 +13,7 @@ resource "aws_vpc_peering_connection_accepter" "peer" {
 }
 
 resource "hcp_hvn_route" "main-to-dev" {
-  hvn_link         = hcp_hvn.main.hcp_vault.self_link
+  hvn_link         = data.hcp_hvn.hcp_vault.self_link
   hvn_route_id     = "main-to-aws"
   #destination_cidr = "10.10.0.0/16"
   destination_cidr = data.aws_vpc.selected.cidr_block
