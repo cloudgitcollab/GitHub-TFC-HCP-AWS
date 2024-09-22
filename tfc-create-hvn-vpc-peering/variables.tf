@@ -13,7 +13,7 @@ variable "hvn_to_vpc" {
 variable "vpc_id" {
   description = "The ID of thepeer VPC in AWS"
   type        = string
-  default     = "vpc-0528f027f4c87f73c"
+  default     = "vpc-088c0bc5f0c441afb"
 }
 variable "vpc_owner_id" {
   description = "The account ID of the peer VPC in AWS"
@@ -29,12 +29,12 @@ variable "region" {
 variable "private_routetable_id" {
   description = "Private Route Table ID"
   type        = string
-  default     = "xxx"
+  default     = "rtb-0c3bf4cd8f3239b9f"
 }
 variable "db_routetable_id" {
   description = "DB Route Table ID"
   type        = string
-  default     = "xxx"
+  default     = "rtb-0b8cdd0079e4c4a9d"
 }
 
 variable "backend_path" {

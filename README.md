@@ -17,7 +17,9 @@ Learn
         - EF e output
 5 - should rotate before dynamic role apply
 
-Service Principle Key
+Service Principle Key 
+HCP_CLIENT_ID
+HCP_CLIENT_SECRET
 Client ID - awIi4t2TwrHL3riSScY4AyXvmSFTnjQR
 Client secret - P12qzHheddUzYd4uga1X6Blgo8tRUWebk3dY9OMiADI4bDF4veT1WH31oYlMQjcB
 
