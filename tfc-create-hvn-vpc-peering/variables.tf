@@ -47,3 +47,7 @@ variable "backend_role" {
     type = string
     default = "master-networkadmin-role"
 }
+variable "aws_region" {
+    description = "AWS Region for Vault AWS Secret Role"
+    default = "ap-southeast-1"
+}
