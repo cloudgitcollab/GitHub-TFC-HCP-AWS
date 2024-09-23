@@ -1,7 +1,7 @@
 variable "vpc_id" {
   description = "The ID of the peer VPC in AWS"
   type        = string
-  default     = "xxxxx"
+  default     = "vpc-0f1197704c8e2eb1b"
 }
 
 variable "public_ssh_security_group_name" {
@@ -32,5 +32,5 @@ variable "db_security_group_name" {
 variable "vault.cidr_block" {
   description = "vault.cidr_block for db"
   type        = string
-  default     = "x.x.x.x"
+  default     = "172.25.16.0/20"
 }
