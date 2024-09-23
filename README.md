@@ -45,8 +45,8 @@ vault_admin_name :"vault-admin"
 vault_admin_secret_accesskey :Sensitive value
 
 ============================================================================================================================
-export VAULT_ADDR="https://aws-hcp-vault-cluster-public-vault-c6f8ff18.e630c022.z1.hashicorp.cloud:8200"; export VAULT_NAMESPACE="admin"
-export VAULT_TOKEN=hvs.CAESIG9wtUnPle6qlR9HrWg_HulZAlrhwPXvu3a4E4yoEEPxGicKImh2cy5LR0JxMDBXbm9NNHdBeWVLM2gxWE92NGMuYVJpWWgQlAE
+export VAULT_ADDR="https://aws-hcp-vault-cluster-public-vault-fc9f82cc.32ede49e.z1.hashicorp.cloud:8200"; export VAULT_NAMESPACE="admin"
+export VAULT_TOKEN=hvs.CAESIOB513nWp80pq7v76lubGXgivjaBuMMIPQFUW8c4qerjGicKImh2cy5LNUlJVVlxRHNqY2RNaG5sT1dFVGZRclcuZ3ZYQTkQzgc
 
 vault secrets list
 vagrant@CLOUDNATIVEBOX:~/terraform-cop/Project01-GitHub-TFC-HCP-AWS$ vault list aws-master-account/roles
