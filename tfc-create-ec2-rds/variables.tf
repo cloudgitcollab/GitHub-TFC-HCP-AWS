@@ -29,7 +29,7 @@ variable "db_security_group_name" {
   type        = string
   default     = "db-security-greoup"
 }
-variable "vault.cidr_block" {
+variable "vault_cidr_block" {
   description = "vault.cidr_block for db"
   type        = string
   default     = "172.25.16.0/20"

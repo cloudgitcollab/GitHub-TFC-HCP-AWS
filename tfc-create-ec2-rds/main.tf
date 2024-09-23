@@ -100,7 +100,7 @@ resource "aws_vpc_security_group_ingress_rule" "db" {
 }
 resource "aws_vpc_security_group_ingress_rule" "vault" {
   security_group_id = aws_security_group.security_group_db.id
-  cidr_ipv4   = var.vault.cidr_block
+  cidr_ipv4   = var.vault_cidr_block
   from_port   = 3306
   ip_protocol = "tcp"  
   to_port     = 3306
