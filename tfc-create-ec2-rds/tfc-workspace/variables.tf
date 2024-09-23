@@ -4,22 +4,22 @@
 variable "workspace_name" {
   description = "Workspace Name"
   type = string
-  default = "xxxx"
+  default = "create_rds_ec2"
 }
 variable "org_name" {
   description = "Organization Name"
   type = string
-  default = "Project01xxxxx"
+  default = "Project01_GitHub_TFC_HCP_AWS"
 }
 variable "vault_url" {
   description = "The address of the Vault instance runs will access."
   type = string
-  default = "xxxxx"
+  default = "https://aws-hcp-vault-cluster-public-vault-fc9f82cc.32ede49e.z1.hashicorp.cloud:8200"
 }
 variable "run_role" {
   description = "TFC_VAULT_RUN_ROLE"
   type = string
-  default = "xxx-admin-role"
+  default = "admin-role"
 }
 variable "vault_namespace" {
   description = "TFC_VAULT_NAMESPACE"
@@ -39,7 +39,7 @@ variable "aws_auth_type" {
 variable "aws_secret_role" {
   description = "TFC_VAULT_BACKED_AWS_RUN_VAULT_ROLE"
   type = string
-  default = "master-iamadmin-role"
+  default = "master-networkadmin-role"
 }
 variable "aws_region" {
   description = "AWS_REGION"

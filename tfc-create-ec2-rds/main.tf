@@ -92,14 +92,14 @@ resource "aws_security_group" "security_group_db" {
 }
 resource "aws_vpc_security_group_ingress_rule" "db" {
   for_each = data.aws_subnet.private_subnet
-  security_group_id = aws_security_group.security_grou p_db.id
+  security_group_id = aws_security_group.security_group_db.id
   cidr_ipv4   = each.value.cidr_block
   from_port   = 3306
   ip_protocol = "tcp"  
   to_port     = 3306
 }
 resource "aws_vpc_security_group_ingress_rule" "vault" {
-  security_group_id = aws_security_group.security_grou p_db.id
+  security_group_id = aws_security_group.security_group_db.id
   cidr_ipv4   = var.vault.cidr_block
   from_port   = 3306
   ip_protocol = "tcp"  
