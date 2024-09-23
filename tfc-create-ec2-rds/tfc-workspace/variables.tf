@@ -39,7 +39,7 @@ variable "aws_auth_type" {
 variable "aws_secret_role" {
   description = "TFC_VAULT_BACKED_AWS_RUN_VAULT_ROLE"
   type = string
-  default = "master-networkadmin-role"
+  default = "master-adminaccess-role"
 }
 variable "aws_region" {
   description = "AWS_REGION"

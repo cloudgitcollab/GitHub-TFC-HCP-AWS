@@ -17,7 +17,7 @@ variable "private_ssh_security_group_name" {
 variable "password" {
   description = "password for db"
   type        = string
-  default     = "password@123"
+  default     = "pw123$"
 }
 variable "db_subnet" {
   description = "prioadb_subnet for db"
