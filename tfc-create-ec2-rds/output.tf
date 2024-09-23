@@ -15,9 +15,9 @@ output "rds_username" {
 }
 output "endpoints" {
   value = <<EOF
-AWS RDS Endpoint:  ${aws_db_instance.pdb.endpoint}
+AWS RDS Endpoint:  ${aws_db_instance.db.endpoint}
 For example:
-    mysql -h ${aws_db_instance.pdb.id} -P ${aws_db_instance.pdb.port} -u ${aws_db_instance.pdb.username} -p
+    mysql -h ${aws_db_instance.db.id} -P ${aws_db_instance.db.port} -u ${aws_db_instance.db.username} -p
 Jump Server IP (public):  ${aws_instance.jump.public_ip}
 Jump Server IP (private): ${aws_instance.jump.private_ip}
 For example:
