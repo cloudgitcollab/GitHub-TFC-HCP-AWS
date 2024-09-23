@@ -76,7 +76,7 @@ resource "aws_db_instance" "db" {
     username = admin
     password = var.password
     instance_class = "db.t3.micro"
-    allocallocated_storage = "20"
+    allocated_storage = "20"
     max_allocated_storage = "50"
     db_subnet_group_name = var.db_subnet 
     vpc_security_group_ids = [aws_security_group.security_group_db.id]
